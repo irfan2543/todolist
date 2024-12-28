@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "prettier-plugin-tailwindcss-px-to-rem": "^1.0.3"
+  }
+}

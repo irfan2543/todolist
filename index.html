@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full h-full flex flex-col">
+        <div id="header" class="flex flex-row items-center text-4xl font-serif h-20 bg-gray-200">
+           
+        </div>
+        <div class="flex flex-col items-center mt-32">
+            <div>
+                <p class="text-5xl">To Do List</p>
+            </div>
+            <div class="mt-20 text-4xl">
+                <table class=" border-separate border-spacing-20">
+                    <tr>
+                        <td><label for="titleTodo">Title</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="title" id="titleTodo" placeholder="Title List" 
+                            class="border border-black rounded-xl focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="commentTodo">Comment</label></td>
+                        <td>: </td>
+                        <td><textarea name="comment" id="commentTodo" placeholder="Comment List" class=" resize-none border border-black outline-none focus:border-blue-300 focus:ring-1 focus:ring-blue-500 rounded-xl"></textarea></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td colspan="3"><button onclick="addSession()" class="border border-black">Save</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
