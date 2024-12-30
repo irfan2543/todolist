@@ -14,12 +14,15 @@ const addSession = () =>{
     let currentTodo = currentDate.getTime()
 
     //Make To Do List as Array
-    let TodoList = {
+    let TodoList = [{
         "id" : currentTodo,
         "titleTodo" : titleTodo,
         "commentTodo" : commentTodo
-    }
+    }]
 
     //Add To Session Storage
-    sessionStorage.setItem(`${currentTodo}`, JSON.stringify(TodoList))
+    localStorage.setItem(`${currentTodo}`, JSON.stringify(TodoList))
+
+    setTimeout(1000)
+    window.location.reload()
 }
